@@ -25,4 +25,4 @@ The list of packages needed for this are:
 - [ ] adjust package names to AUR names. 
 - [ ] make a install script
 - [ ] document installation process
-- [ ] organize repo
+- [x] organize repo
