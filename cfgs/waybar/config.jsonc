@@ -1,9 +1,20 @@
 {
   "height": 40,
-  "output": "DP-2",
-  "modules-left": ["clock", "custom/seperator1", "mpris"],
-  "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["pulseaudio", "custom/seperator3", "tray"],
+  "modules-left": [
+    "clock",
+    "custom/seperator1",
+    "mpris"
+  ],
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+    "battery",
+    "custom/seperator2",
+    "pulseaudio",
+    "custom/seperator3",
+    "tray"
+  ],
   "custom/seperator1": {
     "format": " | ",
   },
@@ -36,5 +47,26 @@
   },
   "clock": {
     "format": "  {:%OI:%OM %p - %d/%m/%Y}",
+  },
+  "battery": {
+    "states": {
+      "good": 21,
+      "warning": 20,
+      "critical": 10
+    },
+    "format-icons": [
+      "󰁺",
+      "󰁻",
+      "󰁼",
+      "󰁽",
+      "󰁾",
+      "󰁿",
+      "󰂀",
+      "󰂁",
+      "󰂂",
+      "󰁹"
+    ],
+    "format": "{capacity}% {icon}",
+    "format-charging": "{capacity}% 󰂄"
   },
 }

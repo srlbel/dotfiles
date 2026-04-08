@@ -51,6 +51,10 @@ button:hover {
     padding-right: 3px;
 }
 
+#battery {
+    color: #fff4ed;
+}
+
 #mpris {
     color: #fff4ed;
     padding-right: 3px;
