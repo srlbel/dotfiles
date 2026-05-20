@@ -1,4 +1,3 @@
-#
 # ~/.bashrc
 #
 
@@ -10,7 +9,6 @@ alias grep='grep --color=auto'
 
 export EDITOR="nvim"
 export SUDO_EDITOR="nvim"
+export PATH="$PATH:/home/jeanne/.cargo/bin"
 
 PS1='\[\033[1;32m\][\@][\u@\h \W]\$\[\033[0m\] '
-
-pfetch

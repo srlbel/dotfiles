@@ -1,19 +1,15 @@
 {
   "height": 40,
-  "modules-left": [
-    "clock",
-    "custom/seperator1",
-    "mpris"
-  ],
-  "modules-center": [
-    "hyprland/workspaces"
-  ],
+  "modules-left": ["clock", "custom/seperator1", "mpris"],
+  "modules-center": ["hyprland/workspaces"],
   "modules-right": [
+    "backlight",
+    "custom/seperator2",
     "battery",
     "custom/seperator2",
     "pulseaudio",
     "custom/seperator3",
-    "tray"
+    "tray",
   ],
   "custom/seperator1": {
     "format": " | ",
@@ -36,37 +32,32 @@
     "on-click": "pavucontrol",
   },
   "mpris": {
-    "format": "{artist} - {title}",
-    "format-paused": "<i>(P)</i> {artist} - {title}",
+    "format": "󰐊 {artist} - {title}",
+    "format-paused": "󰏤 {artist} - {title}",
     "artist-len": 20,
-    "title-len": 50
+    "title-len": 50,
   },
   "tray": {
     "icon-size": 16,
     "spacing": 10,
+  },
+  "backlight": {
+    "format": "{percent}%  ",
   },
   "clock": {
     "format": "  {:%OI:%OM %p - %d/%m/%Y}",
   },
   "battery": {
     "states": {
-      "good": 21,
-      "warning": 20,
-      "critical": 10
+      "good": 31,
+      "warning": 30,
+      "critical": 10,
     },
-    "format-icons": [
-      "󰁺",
-      "󰁻",
-      "󰁼",
-      "󰁽",
-      "󰁾",
-      "󰁿",
-      "󰂀",
-      "󰂁",
-      "󰂂",
-      "󰁹"
-    ],
-    "format": "{capacity}% {icon}",
-    "format-charging": "{capacity}% 󰂄"
+    "format": "{capacity}% 󰁹",
+    "format-warning": "{capacity}% 󰁾",
+    "format-critical": "{capacity}% 󰁺",
+    "format-charging": "{capacity}% 󰂄",
+    "design-capactity": true,
+    "full-at": 95,
   },
 }

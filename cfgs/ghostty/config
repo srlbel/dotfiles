@@ -1,5 +1,5 @@
-theme = ayu
+theme = Catppuccin Mocha
 confirm-close-surface=false
-window-padding-x=15
-window-padding-y=15
+window-padding-x=5
+window-padding-y=5
 mouse-hide-while-typing=true
